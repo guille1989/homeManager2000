@@ -1,0 +1,121 @@
+
+> couple-budget-backend@1.0.0 dev
+> tsx watch src/server.ts
+
+MongoDB connected: mongodb://localhost:27017/couple_budget
+9:47:38 AM [tsx] change in ./src\models\SavingsGoal.model.ts Rerunning...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+9:48:07 AM [tsx] change in ./src\schemas\savingsGoal.schema.ts Rerunning...
+c9:49:13 AM [tsx] change in ./src\services\transaction.service.ts Rerunning...
+c9:49:33 AM [tsx] change in ./src\controllers\transaction.controller.ts Rerunning...
+c9:50:04 AM [tsx] change in ./src\services\budget.service.ts Rerunning...
+c9:50:24 AM [tsx] change in ./src\controllers\budget.controller.ts Rerunning...
+c9:50:48 AM [tsx] change in ./src\services\savingsGoal.service.ts Rerunning...
+c9:51:11 AM [tsx] change in ./src\services\savingsGoal.service.ts Rerunning...
+c9:51:31 AM [tsx] change in ./src\routes\savingsGoal.routes.ts Rerunning...
+c9:52:11 AM [tsx] change in ./src\services\report.service.ts Rerunning...
+c9:52:33 AM [tsx] change in ./src\controllers\report.controller.ts Rerunning...
+c9:53:11 AM [tsx] change in ./src\schemas\savingsGoal.schema.ts Rerunning...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+9:53:23 AM [tsx] change in ./src\schemas\transaction.schema.ts Rerunning...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+API running on http://localhost:4000
+[0mGET /api/auth/me [36m304[0m 46.404 ms - -[0m
+[0mGET /api/auth/me [36m304[0m 14.295 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month [32m200[0m 92.945 ms - 2[0m
+[0mGET /api/reports/partner-balance?period=month [32m200[0m 93.360 ms - 307[0m
+[0mGET /api/reports/category-breakdown?period=month [32m200[0m 111.306 ms - 2[0m
+[0mGET /api/reports/summary?period=month [32m200[0m 160.179 ms - 153[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=shared [32m200[0m 45.878 ms - 2[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=shared [32m200[0m 44.800 ms - 2[0m
+[0mGET /api/reports/summary?period=month&visibility=shared [32m200[0m 62.537 ms - 153[0m
+[0mGET /api/reports/partner-balance?period=month [36m304[0m 45.342 ms - -[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [32m200[0m 74.913 ms - 2[0m
+10:04:01 AM [tsx] change in ./src\services\transaction.service.ts Restarting...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+3:37:15 PM [tsx] change in ./src\services\report.service.ts Rerunning...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+3:38:08 PM [tsx] change in ./src\services\report.service.ts Rerunning...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+API running on http://localhost:4000
+3:38:23 PM [tsx] change in ./src\services\report.service.ts Restarting...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+3:40:09 PM [tsx] change in ./src\services\report.service.ts Rerunning...
+cMongoDB connected: mongodb://localhost:27017/couple_budget
+API running on http://localhost:4000
+[0mGET /api/reports/summary?period=month&visibility=shared [36m304[0m 90.610 ms - -[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=shared [36m304[0m 56.773 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=shared [36m304[0m 58.765 ms - -[0m
+[0mGET /api/reports/partner-balance?period=month [36m304[0m 87.840 ms - -[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [36m304[0m 96.454 ms - -[0m
+[0mGET /api/categories [36m304[0m 44.664 ms - -[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [36m304[0m 70.670 ms - -[0m
+[0mGET /api/budgets?visibility=private&month=6&year=2026 [36m304[0m 29.583 ms - -[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=private [36m304[0m 82.319 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=private [36m304[0m 83.594 ms - -[0m
+[0mGET /api/reports/summary?period=month&visibility=private [36m304[0m 95.806 ms - -[0m
+[0mPUT /api/transactions/6a21fd5259b40fa74d45a02b [32m200[0m 43.949 ms - 508[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [32m200[0m 20.337 ms - 3672[0m
+[0mPUT /api/transactions/6a21fd5259b40fa74d45a02b [32m200[0m 27.369 ms - 508[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [32m200[0m 19.084 ms - 3672[0m
+[0mGET /api/budgets?month=6&year=2026&visibility=shared [36m304[0m 17.231 ms - -[0m
+[0mGET /api/savings-goals?visibility=shared [36m304[0m 7.785 ms - -[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=shared [36m304[0m 28.366 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=shared [36m304[0m 27.672 ms - -[0m
+[0mGET /api/reports/summary?period=month&visibility=shared [36m304[0m 38.328 ms - -[0m
+[0mGET /api/reports/partner-balance?period=month [36m304[0m 34.267 ms - -[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [36m304[0m 38.521 ms - -[0m
+[0mGET /api/categories [36m304[0m 11.787 ms - -[0m
+[0mDELETE /api/budgets/6a21e7badc168a5781e24603 [32m204[0m 7.581 ms - -[0m
+[0mGET /api/budgets?month=6&year=2026&visibility=shared [32m200[0m 12.118 ms - 332[0m
+[0mDELETE /api/budgets/6a21fd92dc168a5781e24cc2 [32m204[0m 5.919 ms - -[0m
+[0mGET /api/budgets?month=6&year=2026&visibility=shared [32m200[0m 7.495 ms - 2[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [32m200[0m 6.821 ms - 2[0m
+[0mGET /api/categories [36m304[0m 16.311 ms - -[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [36m304[0m 24.817 ms - -[0m
+[0mPUT /api/transactions/6a21da0c8de17e4b55535855 [32m200[0m 23.293 ms - 517[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [32m200[0m 16.835 ms - 3671[0m
+[0mPOST /api/transactions [32m201[0m 26.610 ms - 445[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [32m200[0m 17.251 ms - 4189[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=shared [36m304[0m 34.943 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=shared [32m200[0m 37.094 ms - 167[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [36m304[0m 32.006 ms - -[0m
+[0mGET /api/reports/summary?period=month&visibility=shared [36m304[0m 55.931 ms - -[0m
+[0mGET /api/reports/partner-balance?period=month [32m200[0m 43.929 ms - 438[0m
+[0mGET /api/categories [36m304[0m 10.708 ms - -[0m
+[0mGET /api/savings-goals?visibility=shared [36m304[0m 7.723 ms - -[0m
+[0mGET /api/budgets?month=6&year=2026&visibility=private [36m304[0m 7.389 ms - -[0m
+[0mGET /api/savings-goals?visibility=private [36m304[0m 8.404 ms - -[0m
+[0mGET /api/budgets?visibility=private&month=6&year=2026 [36m304[0m 17.609 ms - -[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=private [36m304[0m 49.320 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=private [32m200[0m 48.124 ms - 160[0m
+[0mGET /api/reports/summary?period=month&visibility=private [36m304[0m 56.572 ms - -[0m
+[0mGET /api/transactions?visibility=private&page=1&limit=20 [36m304[0m 25.087 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=shared [36m304[0m 21.468 ms - -[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=shared [36m304[0m 30.287 ms - -[0m
+[0mGET /api/reports/summary?period=month&visibility=shared [36m304[0m 42.039 ms - -[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [36m304[0m 22.198 ms - -[0m
+[0mGET /api/reports/partner-balance?period=month [36m304[0m 34.631 ms - -[0m
+[0mGET /api/categories [36m304[0m 16.512 ms - -[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [36m304[0m 27.179 ms - -[0m
+[0mGET /api/budgets?month=6&year=2026&visibility=shared [36m304[0m 8.240 ms - -[0m
+[0mGET /api/budgets?visibility=private&month=6&year=2026 [36m304[0m 25.709 ms - -[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=private [36m304[0m 74.279 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=private [36m304[0m 72.976 ms - -[0m
+[0mGET /api/reports/summary?period=month&visibility=private [36m304[0m 85.099 ms - -[0m
+[0mGET /api/categories [36m304[0m 15.447 ms - -[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [36m304[0m 19.732 ms - -[0m
+[0mPUT /api/transactions/6a21fea459b40fa74d45a07f [32m200[0m 17.741 ms - 506[0m
+[0mGET /api/transactions?visibility=shared&page=1&limit=20 [32m200[0m 15.164 ms - 4193[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=private [32m200[0m 48.513 ms - 752[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=private [32m200[0m 46.905 ms - 160[0m
+[0mGET /api/reports/summary?period=month&visibility=private [32m200[0m 55.679 ms - 188[0m
+[0mGET /api/reports/category-breakdown?period=month&visibility=shared [36m304[0m 25.317 ms - -[0m
+[0mGET /api/reports/income-vs-expense?period=month&visibility=shared [36m304[0m 27.994 ms - -[0m
+[0mGET /api/budgets?visibility=shared&month=6&year=2026 [36m304[0m 24.662 ms - -[0m
+[0mGET /api/reports/summary?period=month&visibility=shared [36m304[0m 40.696 ms - -[0m
+[0mGET /api/reports/partner-balance?period=month [32m200[0m 32.850 ms - 429[0m
+[0mGET /api/savings-goals?visibility=shared [36m304[0m 5.610 ms - -[0m
+[0mGET /api/budgets?month=6&year=2026&visibility=shared [36m304[0m 5.738 ms - -[0m
+3:46:12 PM [tsx] change in ./src\schemas\transaction.schema.ts Restarting...
+cMongoDB connected: mongodb://localhost:27017/couple_budget

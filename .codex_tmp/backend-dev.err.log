@@ -1,0 +1,336 @@
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:27:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:27:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:27:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:27:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:27:1)
+
+Node.js v20.20.2
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+Error: Transform failed with 1 error:
+C:\Proyectos\innoApphomeManager\backend\src\services\savingsGoal.service.ts:42:0: ERROR: Unexpected ")"
+    at failureErrorWithLog (C:\Proyectos\innoApphomeManager\backend\node_modules\esbuild\lib\main.js:1748:15)
+    at C:\Proyectos\innoApphomeManager\backend\node_modules\esbuild\lib\main.js:1017:50
+    at responseCallbacks.<computed> (C:\Proyectos\innoApphomeManager\backend\node_modules\esbuild\lib\main.js:884:9)
+    at handleIncomingPacket (C:\Proyectos\innoApphomeManager\backend\node_modules\esbuild\lib\main.js:939:12)
+    at Socket.readFromStdout (C:\Proyectos\innoApphomeManager\backend\node_modules\esbuild\lib\main.js:862:7)
+    at Socket.emit (node:events:524:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:191:23) {
+  name: 'TransformError'
+}
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:27:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at import_common (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:28:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at import_common (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:28:1)
+
+Node.js v20.20.2
+C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30
+export const updateSavingsGoalSchema = createSavingsGoalSchema.partial().refine(
+                                                               ^
+
+
+TypeError: createSavingsGoalSchema.partial is not a function
+    at <anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:30:64)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\schemas\savingsGoal.schema.ts:40:2)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Object.transformer (C:\Proyectos\innoApphomeManager\backend\node_modules\tsx\dist\register-BOkp8V6j.cjs:9:3176)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at import_common (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:10:8)
+    at Object.<anonymous> (C:\Proyectos\innoApphomeManager\backend\src\routes\savingsGoal.routes.ts:28:1)
+
+Node.js v20.20.2
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
+node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (C:\Proyectos\innoApphomeManager\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Proyectos\innoApphomeManager\backend\src\server.ts:8:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.20.2
