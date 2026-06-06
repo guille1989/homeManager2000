@@ -8,10 +8,18 @@ import { apiRoutes } from "./routes";
 
 export const app = express();
 
+const allowedOrigin = (() => {
+  try {
+    return new URL(env.CLIENT_URL).origin;
+  } catch {
+    return env.CLIENT_URL;
+  }
+})();
+
 app.use(helmet());
 app.use(
   cors({
-    origin: env.CLIENT_URL,
+    origin: allowedOrigin,
     credentials: true
   })
 );
@@ -25,4 +33,3 @@ app.get("/health", (_req, res) => {
 app.use("/api", apiRoutes);
 app.use(notFoundHandler);
 app.use(errorHandler);
-
