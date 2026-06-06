@@ -17,13 +17,13 @@ type AuthContextValue = {
   loading: boolean;
   login: (email: string, password: string) => Promise<void>;
   register: (input: {
-    name: string;
+    name?: string;
     email: string;
     password: string;
     partnerName?: string;
     householdName?: string;
     inviteCode?: string;
-    currency: string;
+    currency?: string;
   }) => Promise<void>;
   refreshMe: () => Promise<void>;
   logout: () => void;

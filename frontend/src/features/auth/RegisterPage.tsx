@@ -13,16 +13,30 @@ import { useAuth } from "./AuthProvider";
 const schema = z
   .object({
     mode: z.enum(["create", "join"]),
-    name: z.string().min(2, "Minimo 2 caracteres"),
+    name: z.string().optional(),
     partnerName: z.string().optional(),
     householdName: z.string().optional(),
     inviteCode: z.string().optional(),
-    currency: z.string().length(3, "Usa un codigo ISO de 3 letras"),
+    currency: z.string().optional(),
     email: z.string().email("Email invalido"),
     password: z.string().min(8, "Minimo 8 caracteres")
   })
   .superRefine((value, ctx) => {
     if (value.mode === "create") {
+      if (!value.name || value.name.length < 2) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ["name"],
+          message: "Minimo 2 caracteres"
+        });
+      }
+      if (!value.currency || value.currency.length !== 3) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          path: ["currency"],
+          message: "Usa un codigo ISO de 3 letras"
+        });
+      }
       if (!value.partnerName || value.partnerName.length < 2) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
@@ -84,13 +98,16 @@ export const RegisterPage = () => {
     setError(null);
     try {
       await createAccount({
-        name: values.name,
         email: values.email,
         password: values.password,
-        currency: values.currency.toUpperCase(),
         ...(values.mode === "join"
           ? { inviteCode: values.inviteCode?.trim() }
-          : { householdName: values.householdName, partnerName: values.partnerName })
+          : {
+              name: values.name,
+              currency: values.currency?.toUpperCase(),
+              householdName: values.householdName,
+              partnerName: values.partnerName
+            })
       });
       navigate("/");
     } catch (requestError) {
@@ -99,7 +116,7 @@ export const RegisterPage = () => {
   });
 
   return (
-    <main className="flex min-h-screen">
+    <main className="flex min-h-screen w-full overflow-x-hidden">
       <div
         className="relative hidden flex-col items-center justify-center overflow-hidden lg:flex lg:w-2/5"
         style={{ background: "linear-gradient(135deg, #1f293d 0%, #353d54 50%, #448481 100%)" }}
@@ -120,7 +137,7 @@ export const RegisterPage = () => {
         </div>
       </div>
 
-      <div className="flex w-full items-start justify-center overflow-y-auto bg-white px-6 py-10 lg:w-3/5">
+      <div className="flex flex-1 items-start justify-center overflow-y-auto bg-white px-6 py-10">
         <div className="w-full max-w-sm">
           <div className="mb-8 lg:hidden">
             <BrandLogo />
@@ -153,14 +170,15 @@ export const RegisterPage = () => {
               </button>
             </div>
 
-            <Field label="Tu nombre" error={errors.name?.message}>
-              <Input {...register("name")} />
-            </Field>
-
             {mode === "create" ? (
-              <Field label="Nombre de tu pareja" error={errors.partnerName?.message}>
-                <Input {...register("partnerName")} />
-              </Field>
+              <>
+                <Field label="Tu nombre" error={errors.name?.message}>
+                  <Input {...register("name")} />
+                </Field>
+                <Field label="Nombre de tu pareja" error={errors.partnerName?.message}>
+                  <Input {...register("partnerName")} />
+                </Field>
+              </>
             ) : (
               <Field label="Codigo de invitacion" error={errors.inviteCode?.message}>
                 <Input {...register("inviteCode")} />
@@ -173,9 +191,11 @@ export const RegisterPage = () => {
               </Field>
             ) : null}
 
-            <Field label="Moneda" error={errors.currency?.message}>
-              <Input className="uppercase" maxLength={3} {...register("currency")} />
-            </Field>
+            {mode === "create" ? (
+              <Field label="Moneda" error={errors.currency?.message}>
+                <Input className="uppercase" maxLength={3} {...register("currency")} />
+              </Field>
+            ) : null}
             <Field label="Email" error={errors.email?.message}>
               <Input type="email" autoComplete="email" {...register("email")} />
             </Field>

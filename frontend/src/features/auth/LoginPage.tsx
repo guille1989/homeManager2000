@@ -45,7 +45,7 @@ export const LoginPage = () => {
   });
 
   return (
-    <main className="flex min-h-dvh">
+    <main className="flex min-h-dvh w-full overflow-x-hidden">
       <div
         className="relative hidden flex-col items-center justify-center overflow-hidden lg:flex lg:w-1/2 xl:w-3/5"
         style={{ background: "linear-gradient(135deg, #1f293d 0%, #353d54 50%, #448481 100%)" }}
@@ -71,7 +71,7 @@ export const LoginPage = () => {
         </div>
       </div>
 
-      <div className="flex min-h-dvh w-full items-start justify-center overflow-y-auto bg-white px-5 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-[calc(2.5rem+env(safe-area-inset-top))] sm:items-center sm:px-6 lg:w-1/2 xl:w-2/5">
+      <div className="flex flex-1 min-h-dvh items-start justify-center overflow-y-auto bg-white px-5 pb-[calc(2.5rem+env(safe-area-inset-bottom))] pt-[calc(2.5rem+env(safe-area-inset-top))] sm:items-center sm:px-6">
         <div className="w-full max-w-sm">
           <div className="mb-6 lg:hidden">
             <BrandLogo />

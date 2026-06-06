@@ -33,15 +33,29 @@ export const register = async (input: RegisterInput) => {
     throw new ApiError(409, "Email is already registered");
   }
 
+  const inviteHousehold = input.inviteCode ? await Household.findOne({ inviteCode: input.inviteCode }) : null;
+
+  if (input.inviteCode && !inviteHousehold) {
+    throw new ApiError(404, "Invite code not found");
+  }
+
+  const usedNames = new Set(inviteHousehold?.members.map((member) => member.name) ?? []);
+  const invitedMemberName = inviteHousehold?.partnerNames.find((name) => !usedNames.has(name));
+  const userName = input.inviteCode ? invitedMemberName : input.name;
+
+  if (!userName) {
+    throw new ApiError(400, "Name is required");
+  }
+
   const passwordHash = await bcrypt.hash(input.password, 12);
   const user = await User.create({
-    name: input.name,
+    name: userName,
     email: input.email,
     passwordHash
   });
 
   if (input.inviteCode) {
-    const household = await joinHousehold(user._id.toString(), input.name, { inviteCode: input.inviteCode });
+    const household = await joinHousehold(user._id.toString(), userName, { inviteCode: input.inviteCode });
     user.householdId = household._id;
 
     return {
@@ -52,10 +66,10 @@ export const register = async (input: RegisterInput) => {
   }
 
   const household = await Household.create({
-    name: input.householdName ?? `Hogar de ${input.name}`,
+    name: input.householdName ?? `Hogar de ${userName}`,
     currency: input.currency,
-    partnerNames: [input.name, input.partnerName ?? "Pareja"],
-    members: [{ userId: user._id, name: input.name, role: "owner" }]
+    partnerNames: [userName, input.partnerName ?? "Pareja"],
+    members: [{ userId: user._id, name: userName, role: "owner" }]
   });
 
   user.householdId = household._id;
